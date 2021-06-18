@@ -5,9 +5,9 @@ const CardRepo = (props) => {
     return (
         <div className="CardRepo">
             <div>
-                <strong>{props.repoInfo.name}</strong>
-                <p>{props.repoInfo.description}</p>
-                <p>Linguagem: <strong>{props.repoInfo.language}</strong></p>
+                <strong>{props.data.name}</strong>
+                <p>{props.data.description}</p>
+                <p>Linguagem: <strong>{props.data.language}</strong></p>
             </div>
         </div>
     )

@@ -6,6 +6,7 @@ import Card from '../../components/Card';
 import InfoUsuario from '../../Mock/infoUsuario.json';
 
 const Home = () => {
+
     const [data, setData] = useState(null)
     const[texto, setTexto] = useState('Inicial')
 
@@ -19,8 +20,11 @@ const Home = () => {
             <Header>
                 Digite seu usuário Github   
             </Header>    
-            <Input valorTexto={texto} atualizaTexto={setTexto} loadData={loadData}/>
-            {data !== null ? <Card infoUsuario={data}/> : ""}
+            <Input 
+            valorTexto={texto} 
+            atualizaTexto={setTexto} 
+            loadData={loadData}/>
+            {data !== null ? <Card infoUsuario={data}/> : ""}           
         </div>
     )
 }
