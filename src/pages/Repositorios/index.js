@@ -52,7 +52,7 @@ const Repositorios = () =>{
                 Repositórios
             </Header>
             <InputPesquisa texto={texto} setTexto={setTexto}/>
-            <div className="CardArea">
+            <div className="CardArea">            
 
                 {cardsFiltrados.length === 0 ?                 
                     <ListarCardRepo data={data} />
